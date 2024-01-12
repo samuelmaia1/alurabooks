@@ -28,3 +28,7 @@
 .card__descricao{
     display: flex;
 }
+
+@media screen and (min-width: 1024px) {
+    
+}
