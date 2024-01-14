@@ -41,9 +41,14 @@
             <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
         </ul>
         <div class="container">
-            <a href="#"><img src="assets/Favoritos.svg" alt="favoritos" class="container__imagem container__imagem-transparente"></a>
-            <a href="#"><img src="assets/Compras.svg" alt="compras" class="container__imagem"></a>
-            <a href="#"><img src="assets/Usuário.svg" alt="Usuário" class="container__imagem"></a>
+            <a href="#" class="container__link">
+                <img src="assets/Compras.svg" alt="compras" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="assets/Usuário.svg" alt="Usuário" class="container__imagem">
+                <p class="container__texto">Minha sacola</p>
+            </a>
         </div>
     </header>
     <section class="banner">
@@ -59,48 +64,48 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
-        <div class="swiper">
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide"><img src="assets/ApacheKafka.png" alt=""></div>
-        <div class="swiper-slide"><img src="assets/Liderança.png" alt=""></div>
-        <div class="swiper-slide"><img src="assets/Javascript.png" alt=""></div>
-        <div class="swiper-slide"><img src="assets/Guia Front-end.png" alt=""></div>
-        <div class="swiper-slide"><img src="assets/Acessibilidade.png" alt=""></div>
-        <div class="swiper-slide"><img src="assets/Portugol.png" alt=""></div>
-        ...
-        </div>
-
-    
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-    </div>
-
-    <div class="card">
-        <!--1 Linha-->
-        <div class="card__descricao">
-            <!-- 1 coluna-->
-            <div class="descricao">
-                <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+        <div class="carrossel__container">
+            <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="assets/ApacheKafka.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/Liderança.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/Javascript.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/Guia Front-end.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/Acessibilidade.png" alt=""></div>
+            <div class="swiper-slide"><img src="assets/Portugol.png" alt=""></div>
+            ...
             </div>
-            <!-- 2 coluna-->
-            <img src="assets/Perfil-escritora 2.png" alt="Angular" class="descricao__imagem">
-        </div>
-        <!--2 Linha-->
-        <div class="card__botoes">
-            <!--1 coluna-->
-            <ul class="botoes">
-                <li class="botoes__item"><img src="assets/Favoritos.svg" alt="favoritos"></li>
-                <li class="botoes__item"><img src="assets/Compras.svg" alt="adicionar ao carrinho"></li>
-            </ul>
-            <!--2 coluna-->
-            <a href="#" class="botoes__ancora">Saiba mais</a>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+                </div>
+            
+                <div class="card">
+            <!--1 Linha-->
+            <div class="card__descricao">
+                <!-- 1 coluna-->
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <!-- 2 coluna-->
+                <img src="assets/Perfil-escritora 2.png" alt="Angular" class="descricao__imagem">
+            </div>
+            <!--2 Linha-->
+            <div class="card__botoes">
+                <!--1 coluna-->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="assets/Favoritos.svg" alt="favoritos"></li>
+                    <li class="botoes__item"><img src="assets/Compras.svg" alt="adicionar ao carrinho"></li>
+                </ul>
+                <!--2 coluna-->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
         </div>
     </div>
 
@@ -161,13 +166,43 @@
     </section>
 
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <div class="contato__descricao">
+            <h2 class="contato__titulo">Fique por dentro das novidades</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
         <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
     </section>
     <hr>
     <footer class="rodape">
         <h2 class="rodape__titulo">Grupo Alura</h2>
+        <ul class="rodape__lista">
+            <li class="rodape__lista__titulo">Educação</li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 126-1.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 127-1.png" alt=""></li>
+        </ul>
+            
+        <ul class="rodape__lista">
+            <li class="rodape__lista__titulo">Educação Online</li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 126.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 127.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 128.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 129.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 130.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 131.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 132.png" alt=""></li>
+        </ul>
+
+        <ul class="rodape__lista">
+            <li class="rodape__lista__titulo">Comunidade</li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 127-2.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 127-2.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 128-1.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 129-1.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 130-1.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 131-1.png" alt=""></li>
+            <li class="rodape__lista__item"><img src="icones-footer/Frame 132-1.png" alt=""></li>
+        </ul>
+        </ul>
     </footer>
     </section>
 
